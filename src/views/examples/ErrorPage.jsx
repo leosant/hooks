@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './ErrorPage.css'
+import PageTitle from '../../components/PageTitle'
 
 const ErrorPage = props => {
     return (
         <div id="Error">
-            <h1>404</h1>
-            <h2>Parece que está página ainda não foi construída...</h2>
+            <PageTitle error
+                title="404"
+                subtitle="Parece que está página ainda não foi construída" />
         </div>
     )
 }
