@@ -7,6 +7,7 @@ import SectionTitle from '../../components/SectionTitle'
 const StateHook = props => {
     
     const [count, setCount] = useState(0)
+    const [name , setName] = useState("")
 
 
     return (
@@ -33,6 +34,9 @@ const StateHook = props => {
                 </div>
             </div>
             <SectionTitle title="Exercícios #02" />
+            <input type="text" className="input" 
+                value={name} onChange={e => setName(e.target.value)}/>
+                <span className="text">{name}</span>
         </div>
     )
 }
